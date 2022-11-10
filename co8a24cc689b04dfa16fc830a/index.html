@@ -1,0 +1,66 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"> 
+        <title>Jimmy's Diner : The best burgers and pizzas in town</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-txt">
+                <h1 id="title">Jimmy's Diner<h1>
+                <p id="subtitle">The best burgers and pizzas in town.</p>
+            </div>
+        </header>
+        <main>
+            <section class="menu" id="menu">
+                <!-- MENU -->
+            </section>
+            <section class="checkout" id="checkout">
+                <!-- CHECKOUT -->
+            </section>
+        </main>
+        <div class="payment-modal" id="payment-modal">
+            <h2 class="form-title">Enter card details</h2>
+            <form id="payment-form">
+                <input 
+                type="text"
+                id="client-name"
+                name="client-name"
+                placeholder="Enter your name"
+                aria-label="Enter name"
+                required
+                >
+                
+                <input 
+                type="text"
+                id="card-number"
+                name="card-number"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="16"
+                placeholder="Enter card number"
+                aria-label="Enter card number"
+                required
+                >
+                
+                <input 
+                type="text"
+                id="card-cvv"
+                name="card-cvv"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="3"
+                placeholder="Enter CVV"
+                aria-label="Enter CVV"
+                required
+                >
+                
+                <button class="submit-btn" type="submit">Pay</button>
+            </form>
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
